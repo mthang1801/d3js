@@ -5,89 +5,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">  
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">  
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-  <title>Pie Chart</title>
-  <style>
-    .uppercase{
-      text-transform: uppercase;
-    }
-    .tooltip{
-      padding : 10px;
-      background-color: #333;
-      color : #fff;
-    }
-    .tooltip .delete{
-      color : hotpink;
-      font-size : .8em;
-    }
-    form{
-      max-width: 350px;
-    }
-  </style>
+  <title>D3js Tutorial</title>
+
 </head>
 <body class="indigo">
-    <header class="indigo darken-1 white-text center section">
-      <h2 class="uppercase">GDP Of Countries</h2>
-      <p class="flow-text">Total GDP in 2019</p>
-    </header>
-    <div class="container  section">
-      <div class="row">
-        <div class="col s12 m5 l6">
-          <form class="card center z-depth-4" id="form">            
-            <div class="card-content">        
-              <h3 class="flow-text text-darken-4 grey-text">Add Country</h3>      
-              <div id="errors" class="red-text text-flow"></div>
-              <div id="success" class="green-text text-flow"></div>
-              <div class="input-field">
-                <input type="text" id="name">
-                <label for="name">Country Name</label>
-              </div>
-              <div class="input-field">
-                <input type="text" id="gdp">
-                <label for="gdp">GDP Value</label>
-              </div>              
-              <div class="input-field">
-                <button class="btn waves-effect waves-light pink">Add Country <i class="material-icons right">send</i></button>
-              </div>              
-            </div>            
-          </form>
-        </div>
-        <div class="col s12 m7 l6">
-          <div class="canvas"></div>
-        </div>
-      </>
+    <header class="center darken-2 white-text text-lighten-1">
+      <h2>D3JS TUTORIAL</h2>    
+    </header>  
+    <div class="container section">
+      <div class="row">       
+          <div class="collection">
+            <a href="#!" class="collection-item" target="_blank">Bar Chart</a>  
+            <a href="https://github.com/mthang1801/d3js/tree/pie-chart" class="collection-item" target="_blank">Pie Chart</a>            
+          </div>        
+      </div>
+     
     </div>
-    <script src="https://d3js.org/d3.v5.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.25.6/d3-legend.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.9.1/d3-tip.min.js"></script>
-    <!-- The core Firebase JS SDK is always required and must be listed first -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>    
-    <!-- The core Firebase JS SDK is always required and must be listed first -->
-    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-firestore.js"></script>
-
-    <!-- TODO: Add SDKs for Firebase products that you want to use
-        https://firebase.google.com/docs/web/setup#available-libraries -->
-    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-analytics.js"></script>
-
-    <script>
-      // Your web app's Firebase configuration
-      var firebaseConfig = {
-        apiKey: "AIzaSyA28jDIq_bPI97AwwO2FKAxym4k68TRHQI",
-        authDomain: "d3js-48ff7.firebaseapp.com",
-        databaseURL: "https://d3js-48ff7.firebaseio.com",
-        projectId: "d3js-48ff7",
-        storageBucket: "d3js-48ff7.appspot.com",
-        messagingSenderId: "915094434190",
-        appId: "1:915094434190:web:c73a3f3d4858b2697874df",
-        measurementId: "G-XVDWBF5M8C"
-      };
-      // Initialize Firebase
-      firebase.initializeApp(firebaseConfig);
-      firebase.analytics();
-      const  db = firebase.firestore();
-    </script>
     
-    <script src="index.js"></script>
-    <script src="pie.js"></script>
 </body>
 </html>
